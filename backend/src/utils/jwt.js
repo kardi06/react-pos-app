@@ -1,6 +1,6 @@
 import JsonWebToken from "jsonwebtoken";
-import "dotenv/config";
-
+import { Buffer } from "buffer";
+import process from "process";
 
 const generateAccessToken = (user) => {
     return JsonWebToken.sign(user, process.env.JWT_SECRET,{
