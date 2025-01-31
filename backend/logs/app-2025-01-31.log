@@ -1,0 +1,59 @@
+ [LOGGER] 2025-01-31 10:28:55.312 AM error : uncaughtException: loggers.error is not a function
+TypeError: loggers.error is not a function
+    at createUser (file:///D:/learning/react/porto/pos_app/backend/src/controllers/user.controller.js:27:17)
+ [LOGGER] 2025-01-31 10:31:02.861 AM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pojok Code 2",
+    userName: "code2",
+    password: {},
+              ~~
+    role: "admin"
+  }
+}
+
+Argument `password`: Invalid value provided. Expected String, provided Object.
+ [LOGGER] 2025-01-31 10:32:01.822 AM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pojok Code 2",
+    userName: "code2",
+    password: {},
+              ~~
+    role: "admin"
+  }
+}
+
+Argument `password`: Invalid value provided. Expected String, provided Object.
+ [LOGGER] 2025-01-31 10:32:47.544 AM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pojok Code 2",
+    userName: "code2",
+    password: {},
+              ~~
+    role: "admin"
+  }
+}
+
+Argument `password`: Invalid value provided. Expected String, provided Object.
+ [LOGGER] 2025-01-31 10:36:16.763 AM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pojok Code 2",
+    userName: "code2",
+    password: {},
+              ~~
+    role: "admin"
+  }
+}
+
+Argument `password`: Invalid value provided. Expected String, provided Object.

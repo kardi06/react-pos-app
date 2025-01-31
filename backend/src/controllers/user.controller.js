@@ -1,7 +1,7 @@
 import { userValidation } from "../validations/user.validation.js";
 import prisma from "../utils/client.js";
 import { encript } from "../utils/bcript.js";
-import { loggers } from "winston";
+import { loggers } from "../utils/winston.js";
 
 export const createUser = async (req, res) => {
     const {error, value} = userValidation(req.body);

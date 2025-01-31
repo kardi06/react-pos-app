@@ -11,7 +11,7 @@ const transport = new winston.transports.DailyRotateFile({
   handleExceptions: true,
 });
 
-export const logger = winston.createLogger({
+export const loggers = winston.createLogger({
   level: "silly",
   format: winston.format.combine(
     winston.format.json({ space: 2 }),
