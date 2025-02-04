@@ -1,0 +1,56 @@
+ [LOGGER] 2025-02-04 09:49:59.855 AM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pojok Code 2",
+    userName: "code2",
+    password: {},
+              ~~
+    role: "admin"
+  }
+}
+
+Argument `password`: Invalid value provided. Expected String, provided Object.
+ [LOGGER] 2025-02-04 09:50:37.952 AM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pojok Code 2",
+    userName: "code2",
+    password: {},
+              ~~
+    role: "admin"
+  }
+}
+
+Argument `password`: Invalid value provided. Expected String, provided Object.
+ [LOGGER] 2025-02-04 09:55:30.613 AM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pojok Code 2",
+    userName: "code2",
+    password: {},
+              ~~
+    role: "admin"
+  }
+}
+
+Argument `password`: Invalid value provided. Expected String, provided Object.
+ [LOGGER] 2025-02-04 09:58:06.583 AM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+{
+  data: {
+    name: "Pojok Code 2",
+    userName: "code2",
+    password: {},
+              ~~
+    role: "admin"
+  }
+}
+
+Argument `password`: Invalid value provided. Expected String, provided Object.
