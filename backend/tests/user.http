@@ -9,3 +9,25 @@ Content-Type: application/json
     "confirmPassword":"samaan",
     "role":"admin"
 }
+
+### user login
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "userName":"code2",
+    "password":"samaan"
+}
+
+### update user
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlck5hbWUiOiJjb2RlMiIsInBhc3N3b3JkIjoieHh4eHh4eHh4eHh4eHh4eHh4IiwibmFtZSI6IlBvam9rIENvZGUgMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczODg5NjQ5NCwiZXhwIjoxNzM4ODk4Mjk0fQ.ZkrUq4Cb81B3sCk9_8UjzfXqIzSOcTMlCRgYW1lSkRI
+
+{
+    "name":"Pojok Code",
+    "userName":"code2",
+    "password":"samaan",
+    "confirmPassword":"samaan",
+    "role":"admin"
+}

@@ -59,7 +59,7 @@ export const updateUser = async (req, res) => {
     }
     let pass = user.password;
     if (value.password && value.password.length > 0) {
-        pass = encript(value.password);
+        pass = await encript(value.password);
     }
     try {
         const result = await prisma.user.update({

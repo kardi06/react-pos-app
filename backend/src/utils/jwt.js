@@ -1,5 +1,6 @@
 import JsonWebToken from "jsonwebtoken";
 import { Buffer } from "buffer";
+import "dotenv/config";
 import process from "process";
 
 const generateAccessToken = (user) => {
@@ -25,7 +26,7 @@ const verifyRefreshToken = (token) => {
 const parseJwt = (token) => {
     return JSON.parse(Buffer.from(token.split('.')[1], 'base64').toString());
 }
-const varifyAccessToken = (token) => {
+const verifyAccessToken = (token) => {
     try{
         return JsonWebToken.verify(token, process.env.JWT_SECRET);
     }catch (err) {
@@ -38,5 +39,5 @@ export {
     generateRefreshToken,
     verifyRefreshToken,
     parseJwt,
-    varifyAccessToken
+    verifyAccessToken
 };
