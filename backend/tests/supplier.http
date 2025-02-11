@@ -1,0 +1,47 @@
+@lastId=998
+@limit=4
+### get all supplier
+GET http://localhost:3000/api/suppliers?lastId={{lastId}}&limit={{limit}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlck5hbWUiOiJjb2RlMiIsInBhc3N3b3JkIjoieHh4eHh4eHh4eHh4eHh4eHh4IiwibmFtZSI6IlBvam9rIENvZGUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MzkyNDQxMzEsImV4cCI6MTczOTI0NTkzMX0.0qlv1bQgWCdvlctYA93OITW12K-BriNpLSj6ZQh24Vg
+
+### get supplier by id
+GET http://localhost:3000/api/suppliers/1001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlck5hbWUiOiJjb2RlMiIsInBhc3N3b3JkIjoieHh4eHh4eHh4eHh4eHh4eHh4IiwibmFtZSI6IlBvam9rIENvZGUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MzkyNDQxMzEsImV4cCI6MTczOTI0NTkzMX0.0qlv1bQgWCdvlctYA93OITW12K-BriNpLSj6ZQh24Vg
+
+### add supplier
+POST http://localhost:3000/api/suppliers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlck5hbWUiOiJjb2RlMiIsInBhc3N3b3JkIjoieHh4eHh4eHh4eHh4eHh4eHh4IiwibmFtZSI6IlBvam9rIENvZGUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MzkyNDQxMzEsImV4cCI6MTczOTI0NTkzMX0.0qlv1bQgWCdvlctYA93OITW12K-BriNpLSj6ZQh24Vg
+Content-Type: application/json
+
+{
+    "firstName": "Pojok Code",
+    "lastName": "Code",
+    "phone": "12345678",
+    "email": null,
+    "address": "jakarta barat"
+}
+
+### edit supplier
+PUT http://localhost:3000/api/suppliers/1001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlck5hbWUiOiJjb2RlMiIsInBhc3N3b3JkIjoieHh4eHh4eHh4eHh4eHh4eHh4IiwibmFtZSI6IlBvam9rIENvZGUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MzkyNDQxMzEsImV4cCI6MTczOTI0NTkzMX0.0qlv1bQgWCdvlctYA93OITW12K-BriNpLSj6ZQh24Vg
+Content-Type: application/json
+
+{
+    "firstName": "Pojok Code",
+    "lastName": "Code",
+    "phone": "12345678",
+    "email": null,
+    "address": "jakarta barat"
+}
+
+### delete supplier
+DELETE http://localhost:3000/api/suppliers/1001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlck5hbWUiOiJjb2RlMiIsInBhc3N3b3JkIjoieHh4eHh4eHh4eHh4eHh4eHh4IiwibmFtZSI6IlBvam9rIENvZGUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MzkyNDQxMzEsImV4cCI6MTczOTI0NTkzMX0.0qlv1bQgWCdvlctYA93OITW12K-BriNpLSj6ZQh24Vg
+
+### generate pdf file
+GET http://localhost:3000/api/suppliers-pdf
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlck5hbWUiOiJjb2RlMiIsInBhc3N3b3JkIjoieHh4eHh4eHh4eHh4eHh4eHh4IiwibmFtZSI6IlBvam9rIENvZGUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MzkyNDQxMzEsImV4cCI6MTczOTI0NTkzMX0.0qlv1bQgWCdvlctYA93OITW12K-BriNpLSj6ZQh24Vg
+
+### generate supplier excel
+GET http://localhost:3000/api/suppliers-excel
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlck5hbWUiOiJjb2RlMiIsInBhc3N3b3JkIjoieHh4eHh4eHh4eHh4eHh4eHh4IiwibmFtZSI6IlBvam9rIENvZGUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MzkyNDQxMzEsImV4cCI6MTczOTI0NTkzMX0.0qlv1bQgWCdvlctYA93OITW12K-BriNpLSj6ZQh24Vg
