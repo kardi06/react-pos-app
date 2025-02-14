@@ -1,0 +1,43 @@
+### create cart
+POST http://localhost:3000/api/carts
+Authorization: Bearer {{$global.accessToken}}
+Content-Type: application/json
+{
+    "price": 25000,
+    "productName": "Sample Product",
+    "qty": 1,
+    "totalPrice": 25000,
+    "note": "",
+    "productId": 1,
+    "userId": 1
+}
+
+### get all cart
+GET http://localhost:3000/api/carts
+Authorization: Bearer {{$global.accessToken}}
+
+### get cart by product
+GET http://localhost:3000/api/carts/product/1/1
+Authorization: Bearer {{$global.accessToken}}
+
+### update cart
+PUT http://localhost:3000/api/carts/1
+Authorization: Bearer {{$global.accessToken}}
+Content-Type: application/json
+{
+    "price": 25000,
+    "productName": "Sample Product",
+    "qty": 1,
+    "totalPrice": 25000,
+    "note": "",
+    "productId": 1,
+    "userId": 1
+}
+
+### delete cart
+DELETE http://localhost:3000/api/carts/2/1
+Authorization: Bearer {{$global.accessToken}}
+
+### delete cart by user id
+DELETE http://localhost:3000/api/carts/1
+Authorization: Bearer {{$global.accessToken}}
