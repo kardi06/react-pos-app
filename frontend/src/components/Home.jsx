@@ -1,11 +1,11 @@
 import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
 import NavbarComponent from "./NavbarComponent.jsx";
-import ChartComponent from "./dashboard/ChartComponent.jsx";
-import { useState } from "react";
+// import ChartComponent from "./dashboard/ChartComponent.jsx";
+// import { useState } from "react";
 
 const Home = () => {
-  const [totPurchase, setTotPurchase] = useState(0);
-  const [totOrder, setTotOrder] = useState(0);
+//   const [totPurchase, setTotPurchase] = useState(0);
+//   const [totOrder, setTotOrder] = useState(0);
   return (
     <>
       <NavbarComponent />
@@ -18,7 +18,7 @@ const Home = () => {
             </Breadcrumb>
           </Col>
         </Row>
-        <Row className="mt-3 bg-body-tertiary rounded p-3">
+        {/* <Row className="mt-3 bg-body-tertiary rounded p-3">
           <Col xl={6} md={6} sm={12}>
             <div className="shadow-sm card bg-body border-0">
               <div className="card-body">
@@ -57,8 +57,8 @@ const Home = () => {
               </div>
             </div>
           </Col>
-        </Row>
-        <Row className="mt-3 bg-body-tertiary rounded p-3">
+        </Row> */}
+        {/* <Row className="mt-3 bg-body-tertiary rounded p-3">
           <Col>
             <div className="shadow-sm card bg-body border-0">
               <div className="card-body">
@@ -69,7 +69,7 @@ const Home = () => {
               </div>
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </>
   );

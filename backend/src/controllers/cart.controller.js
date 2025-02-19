@@ -1,5 +1,5 @@
 import prisma from "../utils/client.js";
-import { logger } from "../utils/winston.js";
+import { loggers } from "../utils/winston.js";
 
 export const createCart = async (req, res) => {
     try {
@@ -19,7 +19,7 @@ export const createCart = async (req, res) => {
         result,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/cart.controller.js:createCart - " + error.message
         );
         res.status(500).json({
@@ -41,7 +41,7 @@ export const getAllCart = async (req, res) => {
             result,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/cart.controller.js:getAllCart - " + error.message
         );
         return res.status(500).json({
@@ -65,7 +65,7 @@ export const getCartByProductId = async (req, res) => {
             result: result[0],
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/cart.controller.js:getCartByProductId - " + error.message
         );
         return res.status(500).json({
@@ -96,7 +96,7 @@ export const updateCart = async (req, res) => {
             result,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/cart.controller.js:updateCart - " + error.message
         );
         return res.status(500).json({
@@ -119,7 +119,7 @@ export const deleteCart = async (req, res) => {
             result,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/cart.controller.js:deleteCart - " + error.message
         );
         return res.status(500).json({
@@ -141,7 +141,7 @@ export const deleteAllCart = async (req, res) => {
             result,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/cart.controller.js:deleteAllCart - " + error.message
         );
         return res.status(500).json({

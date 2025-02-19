@@ -1,9 +1,10 @@
+import RouteNavigation from "./auth/RouteNavigation"
 
 function App() {
 
   return (
     <>
-      <h1>Halo Selamat Datang</h1>
+      <RouteNavigation/>
     </>
   )
 }

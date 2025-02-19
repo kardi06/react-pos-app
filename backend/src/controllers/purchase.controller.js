@@ -1,6 +1,6 @@
 import prisma from "../utils/client.js";
 import { setOrderCode } from "../utils/documentPatern.js";
-import { logger } from "../utils/winston.js";
+import { loggers } from "../utils/winston.js";
 import { purchaseValidation } from "../validations/purchase.validation.js";
 import fs from "fs";
 import pdf from "pdf-creator-node";
@@ -78,7 +78,7 @@ export const createPurchase = async (req, res) => {
       result: value,
     });
   } catch (error) {
-    logger.error(
+    loggers.error(
       "controllers/purchase.controller.js:createPurchase - " + error.message
     );
     return res.status(500).json({
@@ -136,7 +136,7 @@ export const getAllPurchase = async (req, res) => {
       hasMore: result.length >= limit ? true : false,
     });
   } catch (error) {
-    logger.error(
+    loggers.error(
       "controllers/purchase.controller.js:getAllPurchase - " + error.message
     );
     return res.status(500).json({
@@ -169,7 +169,7 @@ export const getPurchaseById = async (req, res) => {
       result: result,
     });
   } catch (error) {
-    logger.error(
+    loggers.error(
       "controllers/purchase.controller.js:getPurchaseById - " + error.message
     );
     return res.status(500).json({
@@ -258,7 +258,7 @@ export const generatePdf = async (req, res) => {
       });
     }
   } catch (error) {
-    logger.error(
+    loggers.error(
       "controllers/purchase.controller.js:generatePdf - " + error.message
     );
     return res.status(500).json({
@@ -333,7 +333,7 @@ export const generateExcel = async (req, res) => {
       result: `/excel/purchase.xlsx`,
     });
   } catch (error) {
-    logger.error(
+    loggers.error(
       "controllers/purchase.controller.js:generateExcel - " + error.message
     );
     return res.status(500).json({
@@ -385,7 +385,7 @@ export const purchaseYearly = async (req, res) => {
       result: arry,
     });
   } catch (error) {
-    logger.error(
+    loggers.error(
       "controllers/purchase.controller.js:purchaseYearly - " + error.message
     );
     return res.status(500).json({

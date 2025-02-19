@@ -1,6 +1,6 @@
 import prisma from "../utils/client.js";
 import { setOrderCode } from "../utils/documentPatern.js";
-import { logger } from "../utils/winston.js";
+import { loggers } from "../utils/winston.js";
 import { orderReturnValidation } from "../validations/orderReturn.validation.js";
 
 export const insertOrderReturn = async (req, res) => {
@@ -63,7 +63,7 @@ export const insertOrderReturn = async (req, res) => {
       result: data,
     });
   } catch (error) {
-    logger.error(
+    loggers.error(
       "controllers/orderReturn.controller.js:insertOrderReturn - " +
         error.message
     );

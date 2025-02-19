@@ -1,6 +1,6 @@
 import prisma from "../utils/client.js";
 import { setOrderCode } from "../utils/documentPatern.js";
-import { logger } from "../utils/winston.js";
+import { loggers } from "../utils/winston.js";
 import prism from "@prisma/client";
 import fs from "fs";
 import pdf from "pdf-creator-node";
@@ -58,7 +58,7 @@ export const insertOrder = async (req, res) => {
             result: data,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/order.controller.js:insertOrder - " + error.message
         );
         return res.status(500).json({
@@ -83,7 +83,7 @@ export const getOrderById = async (req, res) => {
             result,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/order.controller.js:getOrderById - " + error.message
         );
         return res.status(500).json({
@@ -134,7 +134,7 @@ export const getAllOrder = async (req, res) => {
             result,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/order.controller.js:getAllOrder - " + error.message
         );
         return res.status(500).json({
@@ -223,7 +223,7 @@ export const generatePdf = async (req, res) => {
             });
         }
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/product.controller.js:generatePdf - " + error.message
         );
         return res.status(500).json({
@@ -298,7 +298,7 @@ export const generateExcel = async (req, res) => {
             result: `/excel/order.xlsx`,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/product.controller.js:generateExcel - " + error.message
         );
         return res.status(500).json({
@@ -351,7 +351,7 @@ export const orderYearly = async (req, res) => {
             result: arry,
         });
     } catch (error) {
-        logger.error(
+        loggers.error(
             "controllers/order.controller.js:orderYearly - " + error.message
         );
         return res.status(500).json({
