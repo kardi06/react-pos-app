@@ -15,7 +15,7 @@ const Login = () => {
         password,
       });
       if (response.data) {
-        secureLocalStorage.setItem("acessToken", response.data.acessToken);
+        secureLocalStorage.setItem("acessToken", response.data.accessToken);
         secureLocalStorage.setItem("refreshToken", response.data.refreshToken);
         secureLocalStorage.setItem("user", response.data.result);
         toast.success(response.data.message, {
