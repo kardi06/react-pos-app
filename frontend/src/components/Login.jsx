@@ -33,9 +33,9 @@ const Login = () => {
   return (
     <div
       className="border d-flex align-items-center justify-content-center"
-      style={{ height: "100vh" }}
+      style={{ height: "100vh"}}
     >
-      <Card className="col-lg-3 col-md-6 col-sm-6 bg-body-tertiary border-0">
+      <Card className="col-lg-3 col-md-6 col-sm-6 bg-body-tertiary border-0" style={{width: "70vh"}}>
         <Card.Body>
           <Card.Title className="text-center mb-5">
             <h4>Login</h4>
