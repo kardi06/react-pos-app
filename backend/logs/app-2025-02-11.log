@@ -1,2 +1,0 @@
- [LOGGER] 2025-02-11 10:22:42.222 AM error : controllers/user.controller.js:verifyAccessToken - JsonWebTokenError: invalid token
- [LOGGER] 2025-02-11 10:32:34.110 AM error : controllers/supplier.controller.js:generateExcel - ENOENT: no such file or directory, open 'D:\learning\react\porto\pos_app\backend\public\excel\Supplier.xlsx'
