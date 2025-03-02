@@ -15,7 +15,7 @@ import ListProduct from "../components/product/ListProduct.jsx";
 import AddProduct from "../components/product/AddProduct.jsx";
 import EditProduct from "../components/product/EditProduct.jsx";
 import ListSales from "../components/sales/ListSales.jsx";
-// import OrderSend from "../components/sales/OrderSend.jsx";
+import OrderSend from "../components/sales/OrderSend.jsx";
 // import ListSalesHistory from "../components/salesHistory/ListSalesHistory.jsx";
 // import SalesReturn from "../components/salesHistory/SalesReturn.jsx";
 // import ListPurchase from "../components/purchase/ListPurchase.jsx";
@@ -50,7 +50,7 @@ const RouteNavigation = () => {
               <Route path="/product/:id" element={<EditProduct />} />
               {/* sales */}
               <Route path="/sales" element={<ListSales />} />
-              {/* <Route path="/orders/:id" element={<OrderSend />} /> */}
+              <Route path="/orders/:id" element={<OrderSend />} />
               {/* sales History */}
               {/* <Route path="/sales-history" element={<ListSalesHistory />} />
               <Route path="/sales-return/:id" element={<SalesReturn />} /> */}
