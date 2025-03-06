@@ -22,7 +22,7 @@ import ListPurchase from "../components/purchase/ListPurchase.jsx";
 import AddPurchase from "../components/purchase/AddPurchase.jsx";
 import PrintPurchase from "../components/purchase/PrintPurchase.jsx";
 import SupplierReport from "../components/report/supplier/SupplierReport.jsx";
-// import ProductReport from "../components/report/product/ProductReport.jsx";
+import ProductReport from "../components/report/product/ProductReport.jsx";
 // import SalesReport from "../components/report/sales/SalesReport.jsx";
 // import PurchaseReport from "../components/report/purchase/PurchaseReport.jsx";
 
@@ -60,7 +60,7 @@ const RouteNavigation = () => {
               <Route path="/purchase/print/:id" element={<PrintPurchase />} />
               {/* report */}
               <Route path="/supplier-report" element={<SupplierReport />} />
-              {/* <Route path="/product-report" element={<ProductReport />} /> */}
+              <Route path="/product-report" element={<ProductReport />} />
               {/* <Route path="/sales-report" element={<SalesReport />} /> */}
               {/* <Route path="/purchase-report" element={<PurchaseReport />} /> */}
               {/* page notfound */}
