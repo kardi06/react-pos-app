@@ -24,7 +24,7 @@ import PrintPurchase from "../components/purchase/PrintPurchase.jsx";
 import SupplierReport from "../components/report/supplier/SupplierReport.jsx";
 import ProductReport from "../components/report/product/ProductReport.jsx";
 import SalesReport from "../components/report/sales/SalesReport.jsx";
-// import PurchaseReport from "../components/report/purchase/PurchaseReport.jsx";
+import PurchaseReport from "../components/report/purchase/PurchaseReport.jsx";
 
 const RouteNavigation = () => {
   const refreshToken = secureLocalStorage.getItem("refreshToken");
@@ -62,7 +62,7 @@ const RouteNavigation = () => {
               <Route path="/supplier-report" element={<SupplierReport />} />
               <Route path="/product-report" element={<ProductReport />} />
               <Route path="/sales-report" element={<SalesReport />} />
-              {/* <Route path="/purchase-report" element={<PurchaseReport />} /> */}
+              <Route path="/purchase-report" element={<PurchaseReport />} />
               {/* page notfound */}
               <Route path="*" element={<NoPage />} />
             </Routes>
